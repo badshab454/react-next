@@ -1,18 +1,16 @@
-import React from "react";
+"use client";
+import React, {useState} from "react";
 
-function page() {
-  let groom = "Salman Khan";
-  let bride = "Katrina Kaif";
-  let marks = 80;
+const page = () => {
+  const [marks, setMarks] = useState(80);
   return (
     <>
-      <h1>
-        {bride} weds {groom}
-      </h1>
-      <h1>Hello Badsha</h1>
-      <p className="bg-red-500 font-bold">My total mark is {marks}</p>
+      <h1>My marks is {marks}</h1>
+      <button onClick={()=>{
+        setMarks(33)
+      }}>update</button>
     </>
   );
-}
+};
 
 export default page;
