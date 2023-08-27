@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+function page () {
+  let groom = "Salman Khan";
+  let bride = "Katrina Kaif";
+  return <h1>{bride} weds {groom}</h1>
 }
 
 export default page
