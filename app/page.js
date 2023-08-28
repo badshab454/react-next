@@ -1,16 +1,12 @@
 "use client";
-import React, {useState} from "react";
+import React,{useState} from "react";
 
 const page = () => {
-  const [marks, setMarks] = useState(80);
-  return (
-    <>
-      <h1>My marks is {marks}</h1>
-      <button onClick={()=>{
-        setMarks(33)
-      }}>update</button>
-    </>
-  );
-};
+  const [count, setCount] = useState(0);
+  return <>
+    <p>You clicked {count} time.</p>
+    <button onClick={() => setCount(count + 1)}>Click Me</button>
+  </>
+}
 
 export default page;
